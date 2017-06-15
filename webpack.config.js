@@ -9,7 +9,7 @@ var extractPlugin = new ExtractTextPlugin({
   filename: 'main.css'
 });
 
-var UglifyJsPlugin = new webpack.optimize.UglifyJsPlugin();
+// var UglifyJsPlugin = new webpack.optimize.UglifyJsPlugin();
 
 
 module.exports = {
@@ -39,6 +39,6 @@ module.exports = {
   plugins:[
     extractPlugin, 
     htmlWebPack, 
-    UglifyJsPlugin
+    // UglifyJsPlugin
   ]
 }

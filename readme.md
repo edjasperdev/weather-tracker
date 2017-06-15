@@ -1,4 +1,5 @@
-# React Boiletplate 
+# Weather App
+## Get a Five-Day Forcast of your Favorite Cities
 ======
 ### By Edward Jasper
 
@@ -7,6 +8,7 @@
 * HTML Webpack Plugin
 * Extract Text Plugin
 * Tests with Mocha and Chai
+* OpenWeatherMap API
 
 
 ### To Run: 
