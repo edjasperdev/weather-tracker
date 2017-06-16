@@ -12,5 +12,7 @@
 
 
 ### To Run: 
-* npm install
-* npm run start
+##### npm install
+##### npm run start
+
+![alt text](http://i.imgur.com/1dM6Tn4g.png  "weather app ss")
