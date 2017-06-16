@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import GoogleMapReact from 'google-map-react';
 import Chart from '../components/Chart';
-// import { bindActionCreators } from 'redux';
 
-class WeatherList extends Component{
+
+class WeatherList extends Component {
 
   renderWeather(cityData) {
     const name = cityData.city.name;
     const temps = cityData.list.map(weather => weather.main.temp);
     const pressures = cityData.list.map(weather => weather.main.pressure);
     const humidities = cityData.list.map(weather => weather.main.humidity);
+    const { lon, lat } = cityData.city.coord;
+    const center = {lat, lng: lon};
 
     return (
       <tr key={ name }>
-        <td>{ name }</td>
+        <td>
+          <GoogleMapReact
+            defaultCenter={ center }
+            defaultZoom={12}
+          />
+        </td>
         <td>
           <Chart data={temps} color='red' units="K" />
         </td>
